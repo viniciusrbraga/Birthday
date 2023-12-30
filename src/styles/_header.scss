@@ -1,0 +1,53 @@
+@use 'variables';
+
+.header {
+    padding-top: 256px;
+    padding-bottom: 100px;
+    background-image: url('../images/sun.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    .container {
+        position: relative;
+        
+    }
+    
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: variables.$text2;
+        content: '';
+        opacity: .5;
+    }
+    
+    &__text {
+        margin-top: 56px;
+        margin-bottom: 264px;
+        font-size: 34px;
+        line-height: 56px;
+        font-weight: 800px;
+        text-align: center;
+
+        #contador {
+            color: variables.$grad4;
+        }
+    }
+
+    @media (max-width: 640px) {
+        padding: 40px 0;
+
+        &__logo {
+            height: 40px;
+        }
+
+        &__text {
+            font-size: 22px;
+            line-height: 24px;
+            margin: 24px 0;
+        }
+    }
+}

@@ -1,0 +1,70 @@
+@use 'variables';
+
+.event {
+    padding: 80px;
+
+    &--cake {
+        background-image: linear-gradient(to right, variables.$grad1, variables.$grad2, variables.$grad1);
+    }
+
+    &--balloons {
+        background-image: linear-gradient(to right, variables.$grad2, variables.$grad3, variables.$grad2);
+    }
+    &--food {
+        background-image: linear-gradient(to right, variables.$grad3, variables.$grad4, variables.$grad3);
+    }
+
+    &--old {
+        background-image: linear-gradient(to right, variables.$grad4, variables.$grad1, variables.$grad4);
+    }
+
+    &--image-left {
+        .container {
+            flex-direction: row-reverse;
+        }
+    }
+    .container {
+        display: flex;
+        gap: 40px;
+        max-width: 640px;
+    }
+
+    &__image {
+        max-width: 360px;
+        box-shadow: 10px 10px 5px variables.$text2;
+    }
+
+    &__details {
+
+        &__title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+
+        &__description {
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+
+    @media (max-width: 640px) {
+        padding: 0px;
+        padding-top: 48px;
+
+        .container {
+            display: block;
+        }
+
+        &__image {
+            width: 100%;
+            margin: 32px;
+        }
+
+        &__details {
+            margin-right: 0px;
+            margin-bottom: 16px;
+            margin-left: 16px;
+        }
+    }
+}

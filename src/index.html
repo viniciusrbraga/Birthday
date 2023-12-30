@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <p class="header__text">
+                Venha comemorar comigo o completar de mais uma volta em torno do sol.<br>
+                O evento começa em <span id="contador"></span>
+            </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Local</b>
+                        Garagem do zezinho, viela estreita, morro tombado.
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        16/04/2024 às 23:45hs
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    Confirme sua presença
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="event event--cake">
+        <div class="container" data-aos="flip-right">
+            <div class="event__details">
+                <p class="event__details__description">
+                    Venha comemorar meus 15 depois de muitos outros 15 anos!<br>
+                    Afinal, o que importa não é a idade física, mas a idade mental!
+                </p>
+            </div>
+            <img class="event__image" src="./images/cake.jpg" alt="cake">
+        </div>
+    </section>
+
+    <section class="event event--balloons event--image-left">
+        <div class="container" data-aos="flip-left">
+            <div class="event__details">
+                <p class="event__details__description">
+                    Para vencer na vida é importante ser inteligente, ser bonito, ter sucesso, grana e ter amigos
+                    verdadeiros.<br>
+                    Bom, pelo menos amigos de verdade eu tenho. Te espero na minha festa!
+                </p>
+            </div>
+            <img class="event__image" src="./images/ballons.jpg" alt="cake">
+        </div>
+    </section>
+
+    <section class="event event--food">
+        <div class="container" data-aos="flip-right">
+            <div class="event__details">
+                <p class="event__details__description">
+                    Hoje é o dia mais especial do ano, porque é o dia que eu nasci.<br> 
+                    Você ganhou a honra de comemorar esse dia comigo, que sou tudo de bom.<br>
+                    Te espero na minha festa de aniversário!
+                </p>
+            </div>
+            <img class="event__image" src="./images/food.webp" alt="cake">
+        </div>
+    </section>
+
+    <section class="event event--old event--image-left">
+        <div class="container" data-aos="flip-left">
+            <div class="event__details">
+                <p class="event__details__description">
+                    Não estou ficando mais velho, estou ficando menos novo.<br>
+                    Venha comemorar minha juventude comigo!
+                </p>
+            </div>
+            <img class="event__image" src="./images/old.webp" alt="cake">
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
